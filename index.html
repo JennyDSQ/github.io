@@ -4,20 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jenny Siqin Ding</title>
+
+  <!-- ✅ Google Fonts Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=PT+Serif&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg-color: #ECEAE5;
+      --font-main: 'Lora', 'Times New Roman', Times, serif;
+      --font-header: 'Lora', 'Times New Roman', Times, serif;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background-color: white;
-      font-family: 'Georgia', 'Times New Roman', Times, serif, sans-serif;
+      background-color: var(--bg-color);
+      font-family: var(--font-main);
       font-size: 20px;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #111;
     }
 
-
     header {
-      font-family: 'PT serif', 'Times New Roman', Times, serif, sans-serif;
-      background-color: white;
+      font-family: var(--font-header);
+      background-color: var(--bg-color);
       text-align: center;
       padding: 2rem 1rem 1rem;
       font-size: 36px;
@@ -28,8 +38,9 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: white;
+      background-color: var(--bg-color);
       padding-bottom: 1rem;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -45,6 +56,7 @@
 
     main {
       display: flex;
+      flex-wrap: wrap;
       max-width: 1000px;
       margin: 2rem auto;
       padding: 1rem;
@@ -52,7 +64,7 @@
     }
 
     .left-column {
-      flex: 1;
+      flex: 1 1 250px;
       text-align: center;
     }
 
@@ -63,7 +75,32 @@
     }
 
     .right-column {
-      flex: 2;
+      flex: 2 1 500px;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 28px;
+        padding: 1.5rem 1rem 1rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      main {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      .right-column {
+        text-align: justify;
+      }
     }
   </style>
 </head>
@@ -84,11 +121,10 @@
       <img src="profile pic small.jpg" alt="Photo of me" />
     </div>
     <div class="right-column">
-      <p>I am a Ph.D. candidate in economics at the University of Maryland. I am a macroeconomist studying topics in labor, consumption, and information friction. My current work studies how households and firms respond differently to aggregate shocks due to micro-level frictions and heterogeneous elasticities, as well as their implications for wages, consumption, inequality, and labor market dynamics. </p>
+      <p>I am a Ph.D. candidate in economics at the University of Maryland. I am a macroeconomist studying topics in labor, consumption, and information friction. My current work studies how households and firms respond differently to aggregate shocks due to micro-level frictions and heterogeneous elasticities, as well as their implications for wages, consumption, inequality, and labor market dynamics.</p>
 
-      </p>I will be on the job market this academic year (AY 2025-2026). </p>
+      <p>I will be on the job market this academic year (AY 2025–2026).</p>
     </div>
   </main>
 </body>
 </html>
-
