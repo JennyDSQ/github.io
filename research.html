@@ -68,8 +68,19 @@
     .title {
       font-weight: bold;
       font-size: 22pt;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.2rem;
     }
+
+    /* ✅ New style for presentation text */
+    .presentations {
+      font-size: 13pt;          /* smaller than title and abstract */
+      font-style: italic;
+      color: #555;
+      margin-top: 0.2rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.4;
+    }
+
 
     .abstract {
       font-weight: normal;
@@ -81,21 +92,19 @@
       display: inline-block;
       padding: 0.5rem 1.2rem;
       font-size: 14pt;
-      font-weight: normal; /* match main text */
-      color: #111; /* same as body text */
-      background-color: var(--bg-color); /* opaque background */
-      border: 1px solid #111; /* thin border so it looks like a tab */
-      border-radius: 25px; /* pill shape */
+      font-weight: normal;
+      color: #111;
+      background-color: var(--bg-color);
+      border: 1px solid #111;
+      border-radius: 25px;
       text-decoration: none;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .button-tab:hover {
-      background-color: #111; /* black background on hover */
-      color: #fff; /* white text on hover */
+      background-color: #111;
+      color: #fff;
     }
-
-
 
     @media (max-width: 768px) {
       header {
@@ -137,41 +146,50 @@
 
   <main>
     <div class="paper">
-  <div class="title">Inaccurate Beliefs and Cyclical Labor Market Dynamics (JMP)</div>
-  <div class="abstract">
-    This paper examines how systematic biases and idiosyncratic noise in beliefs about the state of the economy shape wage dynamics, labor market flows, and aggregate responses to shocks. I present evidence that households form dispersed, backward-looking expectations about macroeconomic conditions, with more optimistic workers demanding higher wages. Motivated by these findings, I develop a search-and-matching model in which workers form noisy beliefs about aggregate productivity and update them through adaptive learning. Firms are homogeneous and are better informed than workers. Wages are bargained based on workers’ subjective beliefs. Staggered renegotiation and two-sided lack of commitment create wage rigidity, which in turn generates endogenous quits and layoffs. The model is disciplined with data from the Michigan Survey of Consumers and calibrated to key empirical moments. The gap between firm and worker beliefs drives unemployment volatility, while greater dispersion in worker beliefs generates more cyclical separations among high-wage workers. Allowing for heterogeneity in workers’ learning rates explains observed differences in employment transitions: workers with more sluggish beliefs remain overly optimistic in recessions, are hired at higher wages, and face a higher risk of separation. Incorporating firm learning raises the persistence of the economy’s response to shocks but narrows belief gaps and dampens volatility. 
-  </div>
-    <div class="links"> 
-    <a href="files/dmp_belief.pdf"       target="_blank" class="button-tab">PDF</a>
-    <a href="files/dmp_belief_slide.pdf" target="_blank" class="button-tab">Slides</a>
-  </div>
-  <div class="links">
+      <div class="title">Inaccurate Beliefs and Cyclical Labor Market Dynamics (JMP)</div>
 
-  </div>
-</div>
+      <!-- ✅ Added presentation text -->
+      <div class="presentations">
+        St. Louis Fed; Midwest Macro (Cleveland Fed); 2025 Econometric Society European Winter Meeting; 
+        The Micro and Macro Perspectives of the Labor Market Virtual Workshop
+      </div>
 
-<div class="paper">
-  <div class="title">Consumption Upgrading and Wage Inequality</div>
-  <div class="abstract">
-    This paper examines how long-run economic growth shapes wage inequality through the joint evolution of household preferences and production technologies. I develop a unified framework that combines capital–skill complementarity with demand-side forces arising from nonhomothetic consumption behavior. Using household expenditure data linked to detailed occupation–industry information, I document two key empirical facts: (i) in the cross-section, richer households allocate a larger share of their spending to goods and services that are more skill-intensive to produce, and (ii) over time, households have increasingly shifted their expenditures toward high-skill-intensive goods. While the first fact suggests the potential importance of technological growth, the second fact points to nonhomothetic demand. To disentangle and quantify these two forces, I construct a multi-industry general equilibrium model featuring nonhomothetic demand, industry-specific technologies, and capital–skill complementarity. The model explains the rise in the U.S. skill premium between 1982 and 2019 through three mechanisms: an income-driven demand shift toward high-skill goods (accounting for about 5 percent of the increase), capital accumulation interacting with capital–skill complementarity (about 82 percent), and faster productivity growth in skill-intensive industries that lowers their relative prices and further amplifies demand (roughly 10 percent).
-  </div>
-  <div class="links"> 
-    <a href="files/consumption_upgrading.pdf"       target="_blank" class="button-tab">PDF</a>
-    <a href="files/consumption_upgrading_slide.pdf" target="_blank" class="button-tab">Slides</a>
-  </div>
-</div>
+      <div class="abstract">
+        This paper examines how systematic biases and idiosyncratic noise in beliefs about the state of the economy shape wage dynamics, labor market flows, and aggregate responses to shocks. I present evidence that households form dispersed, backward-looking expectations about macroeconomic conditions, with more optimistic workers demanding higher wages. Motivated by these findings, I develop a search-and-matching model in which workers form noisy beliefs about aggregate productivity and update them through adaptive learning. Firms are homogeneous and are better informed than workers. Wages are bargained based on workers’ subjective beliefs. Staggered renegotiation and two-sided lack of commitment create wage rigidity, which in turn generates endogenous quits and layoffs. The model is disciplined with data from the Michigan Survey of Consumers and calibrated to key empirical moments. The gap between firm and worker beliefs drives unemployment volatility, while greater dispersion in worker beliefs generates more cyclical separations among high-wage workers. Allowing for heterogeneity in workers’ learning rates explains observed differences in employment transitions: workers with more sluggish beliefs remain overly optimistic in recessions, are hired at higher wages, and face a higher risk of separation. Incorporating firm learning raises the persistence of the economy’s response to shocks but narrows belief gaps and dampens volatility. 
+      </div>
 
-<div class="paper">
-  <div class="title">Hiring under Pressure: Financial Constraints and Match Quality</div>
-  <div><em>with Xincheng Qiu, work in progress</em></div>
-  <div class="abstract">
-    This paper examines how financial constraints shape firms’ hiring and job-posting behavior. Leveraging micro firm-level data on vacancy postings and financial ratios, we document that firms with higher debt-to-asset ratios exhibit shorter vacancy durations. We argue that financially constrained firms are less selective in recruitment, resulting in lower match quality. To formalize this mechanism, we develop a search-and-matching model with heterogeneous firms facing financial frictions. In the model, constrained firms adopt lower reservation thresholds for match productivity, leading to higher worker turnover. Using this framework, we study the long-run productivity effects of policies that relax firms’ credit constraints.
-  </div>
-</div>
+      <div class="links"> 
+        <a href="files/dmp_belief.pdf" target="_blank" class="button-tab">PDF</a>
+        <a href="files/dmp_belief_slide.pdf" target="_blank" class="button-tab">Slides</a>
+      </div>
+    </div>
 
+    <div class="paper">
+      <div class="title">Consumption Upgrading and Wage Inequality</div>
 
+      <!-- ✅ Added presentation text -->
+      <div class="presentations">
+        Lisbon Macro Workshop (2025); Stanford SITE: The Macro and Micro of the Labor Market (2024); 
+        Federal Reserve Board; LACEA-LAMES (2024)
+      </div>
 
+      <div class="abstract">
+        This paper examines how long-run economic growth shapes wage inequality through the joint evolution of household preferences and production technologies. I develop a unified framework that combines capital–skill complementarity with demand-side forces arising from nonhomothetic consumption behavior. Using household expenditure data linked to detailed occupation–industry information, I document two key empirical facts: (i) in the cross-section, richer households allocate a larger share of their spending to goods and services that are more skill-intensive to produce, and (ii) over time, households have increasingly shifted their expenditures toward high-skill-intensive goods. While the first fact suggests the potential importance of technological growth, the second fact points to nonhomothetic demand. To disentangle and quantify these two forces, I construct a multi-industry general equilibrium model featuring nonhomothetic demand, industry-specific technologies, and capital–skill complementarity. The model explains the rise in the U.S. skill premium between 1982 and 2019 through three mechanisms: an income-driven demand shift toward high-skill goods (accounting for about 5 percent of the increase), capital accumulation interacting with capital–skill complementarity (about 82 percent), and faster productivity growth in skill-intensive industries that lowers their relative prices and further amplifies demand (roughly 10 percent).
+      </div>
 
+      <div class="links"> 
+        <a href="files/consumption_upgrading.pdf" target="_blank" class="button-tab">PDF</a>
+        <a href="files/consumption_upgrading_slide.pdf" target="_blank" class="button-tab">Slides</a>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="title">Hiring under Pressure: Financial Constraints and Match Quality</div>
+      <div><em>with Xincheng Qiu, work in progress</em></div>
+      <div class="abstract">
+        This paper examines how financial constraints shape firms’ hiring and job-posting behavior. Leveraging micro firm-level data on vacancy postings and financial ratios, we document that firms with higher debt-to-asset ratios exhibit shorter vacancy durations. We argue that financially constrained firms are less selective in recruitment, resulting in lower match quality. To formalize this mechanism, we develop a search-and-matching model with heterogeneous firms facing financial frictions. In the model, constrained firms adopt lower reservation thresholds for match productivity, leading to higher worker turnover. Using this framework, we study the long-run productivity effects of policies that relax firms’ credit constraints.
+      </div>
+    </div>
   </main>
 </body>
 </html>

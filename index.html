@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jenny Siqin Ding</title>
 
-  <!-- ✅ Google Fonts Import -->
+  <!-- ✅ Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=PT+Serif&display=swap" rel="stylesheet">
+
+  <!-- ✅ Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     :root {
@@ -68,10 +71,39 @@
       text-align: center;
     }
 
+    /* ✅ Fixed photo size */
     .left-column img {
-      max-width: 100%;
+      width: 250px;
       height: auto;
       border-radius: 8px;
+    }
+
+    /* ✅ Social icon styling */
+    .social-links {
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 1rem; /* more spacing between icons */
+      font-size: 2.4rem;
+      transition: transform 0.2s ease;
+      text-decoration: none; /* ensures no underscores appear */
+    }
+
+    /* LinkedIn blue */
+    .social-links a[aria-label="LinkedIn"] {
+      color: #0077b5;
+    }
+
+    /* X (Twitter) black */
+    .social-links a[aria-label="X"] {
+      color: #000;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.15);
+      filter: brightness(0.9);
     }
 
     .right-column {
@@ -98,6 +130,10 @@
         padding: 1rem;
       }
 
+      .left-column img {
+        width: 200px;
+      }
+
       .right-column {
         text-align: justify;
       }
@@ -119,9 +155,20 @@
   <main>
     <div class="left-column">
       <img src="profile pic small.jpg" alt="Photo of me" />
+
+      <!-- ✅ Social icons below profile -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/your-twitter-handle" target="_blank" aria-label="X">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+      </div>
     </div>
+
     <div class="right-column">
-      <p> I am a Ph.D. candidate in Economics at the University of Maryland. I am a macroeconomist studying topics in labor, information frictions, and structural change. I completed my undergraduate education at the University of Wisconsin–Madison in 2020.</p>
+      <p>I am a Ph.D. candidate in Economics at the University of Maryland. I am a macroeconomist studying topics in labor, information frictions, and structural change. I completed my undergraduate education at the University of Wisconsin–Madison in 2020.</p>
 
       <p>I am on the 2025–2026 job market.</p>
 
