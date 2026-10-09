@@ -1,195 +1,481 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Research - Jenny Siqin Ding</title>
 
+
+
   <!-- ✅ Google Fonts Import -->
+
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=PT+Serif&display=swap" rel="stylesheet">
 
+
+
   <style>
+
     :root {
+
       --bg-color: #ECEAE5;
+
       --font-main: 'Lora', 'Times New Roman', Times, serif;
+
     }
+
+
 
     body {
+
       margin: 0;
+
       padding: 0;
+
       background-color: var(--bg-color);
+
       font-family: var(--font-main);
+
       font-size: 24px;
+
       line-height: 1.7;
+
       color: #111;
+
     }
+
+
 
     header {
+
       font-family: var(--font-main);
+
       background-color: var(--bg-color);
+
       text-align: center;
+
       padding: 2rem 1rem 1rem;
+
       font-size: 40px;
+
       font-weight: normal;
+
     }
+
+
 
     nav {
+
       display: flex;
+
       justify-content: center;
+
       gap: 2rem;
+
       background-color: var(--bg-color);
+
       padding-bottom: 1rem;
+
       flex-wrap: wrap;
+
     }
+
+
 
     nav a {
+
       text-decoration: none;
+
       color: #333;
+
       font-weight: normal;
+
       font-size: 1.3rem;
+
     }
+
+
 
     nav a:hover {
+
       color: #007acc;
+
     }
+
+
 
     main {
+
       max-width: 1200px;
+
       width: 90%;
+
       margin: 2rem auto;
+
       padding: 1rem;
+
       font-size: 20px;
+
     }
+
+
 
     .paper {
+
       margin-bottom: 3rem;
+
     }
+
+
 
     .title {
+
       font-weight: bold;
+
       font-size: 22pt;
+
       margin-bottom: 0.2rem;
+
     }
 
+
+
     /* ✅ New style for presentation text */
+
     .presentations {
+
       font-size: 13pt;          /* smaller than title and abstract */
+
       font-style: italic;
+
       color: #555;
+
       margin-top: 0.2rem;
+
       margin-bottom: 0.8rem;
+
       line-height: 1.4;
+
     }
+
+
+
 
 
     .abstract {
+
       font-weight: normal;
+
       font-size: 14pt;
+
       text-align: justify;
+
     }
+
+
 
     .button-tab {
+
       display: inline-block;
+
       padding: 0.5rem 1.2rem;
+
       font-size: 14pt;
+
       font-weight: normal;
+
       color: #111;
+
       background-color: var(--bg-color);
+
       border: 1px solid #111;
+
       border-radius: 25px;
+
       text-decoration: none;
+
       transition: background-color 0.3s ease, color 0.3s ease;
+
     }
+
+
 
     .button-tab:hover {
+
       background-color: #111;
+
       color: #fff;
+
     }
+
+
 
     @media (max-width: 768px) {
+
       header {
+
         font-size: 30px;
+
         padding: 1.5rem 1rem 1rem;
+
       }
+
+
 
       nav a {
+
         font-size: 1.1rem;
+
         margin-bottom: 0.5rem;
+
       }
+
+
 
       main {
+
         font-size: 18px;
+
       }
+
+
 
       .title {
+
         font-size: 20pt;
+
       }
+
+
 
       .abstract {
+
         font-size: 13pt;
+
       }
+
     }
-  </style>
+
+  
+  /* Inline paper status */
+  .paper .inline-status {
+    color: #888888;
+    font-style: italic;
+    font-size: 0.91em;
+    font-weight: normal;
+    margin-left: 0.35rem;
+    white-space: nowrap;
+  }
+
+</style>
+
 </head>
 
+
+
 <body>
+
   <header>
+
     Jenny Siqin Ding
+
   </header>
 
+
+
   <nav>
+
     <a href="index.html">Home</a>
-    <a href="files/CV_Ding_Jenny_mywebsite.pdf" target="_blank">CV</a>    
+
+    <a href="files/CV_Ding_Jenny_mywebsite.pdf" target="\_blank">CV</a>    
+
     <a href="research.html">Research</a>
+
     <a href="teaching.html">Teaching</a>
+
   </nav>
 
-  <main>
-    <div class="paper">
-      <div class="title">Inaccurate Beliefs and Cyclical Labor Market Dynamics (JMP)</div>
 
-      <!-- ✅ Added presentation text -->
-      <div class="presentations">
-        St. Louis Fed; Midwest Macro (Cleveland Fed); 2025 Econometric Society European Winter Meeting; 
-        The Micro and Macro Perspectives of the Labor Market Virtual Workshop
-      </div>
 
-      <div class="abstract">
-        This paper examines how systematic biases and idiosyncratic noise in beliefs about the state of the economy shape wage dynamics, labor market flows, and aggregate responses to shocks. I present evidence that households form dispersed, backward-looking expectations about macroeconomic conditions, with more optimistic workers demanding higher wages. Motivated by these findings, I develop a search-and-matching model in which workers form noisy beliefs about aggregate productivity and update them through adaptive learning. Firms are homogeneous and are better informed than workers. Wages are bargained based on workers’ subjective beliefs. Staggered renegotiation and two-sided lack of commitment create wage rigidity, which in turn generates endogenous quits and layoffs. The model is disciplined with data from the Michigan Survey of Consumers and calibrated to key empirical moments. The gap between firm and worker beliefs drives unemployment volatility, while greater dispersion in worker beliefs generates more cyclical separations among high-wage workers. Allowing for heterogeneity in workers’ learning rates explains observed differences in employment transitions: workers with more sluggish beliefs remain overly optimistic in recessions, are hired at higher wages, and face a higher risk of separation. Incorporating firm learning raises the persistence of the economy’s response to shocks but narrows belief gaps and dampens volatility. 
-      </div>
 
-      <div class="links"> 
-        <a href="files/dmp_belief.pdf" target="_blank" class="button-tab">PDF</a>
-        <a href="files/dmp_belief_slide.pdf" target="_blank" class="button-tab">Slides</a>
-      </div>
+
+<main>
+
+
+
+  <!-- Job Market Paper -->
+
+  <div class="paper">
+
+    <div class="title">
+
+      The Value of Lucky Hires: Match Quality Innovations and Firm Dynamics (JMP)</span>
     </div>
 
-    <div class="paper">
-      <div class="title">Consumption Upgrading and Wage Inequality</div>
 
-      <!-- ✅ Added presentation text -->
-      <div class="presentations">
-        Lisbon Macro Workshop (2025); Stanford SITE: The Macro and Micro of the Labor Market (2024); 
-        Federal Reserve Board; LACEA-LAMES (2024)
-      </div>
 
-      <div class="abstract">
-        This paper examines how long-run economic growth shapes wage inequality through the joint evolution of household preferences and production technologies. I develop a unified framework that combines capital–skill complementarity with demand-side forces arising from nonhomothetic consumption behavior. Using household expenditure data linked to detailed occupation–industry information, I document two key empirical facts: (i) in the cross-section, richer households allocate a larger share of their spending to goods and services that are more skill-intensive to produce, and (ii) over time, households have increasingly shifted their expenditures toward high-skill-intensive goods. While the first fact suggests the potential importance of technological growth, the second fact points to nonhomothetic demand. To disentangle and quantify these two forces, I construct a multi-industry general equilibrium model featuring nonhomothetic demand, industry-specific technologies, and capital–skill complementarity. The model explains the rise in the U.S. skill premium between 1982 and 2019 through three mechanisms: an income-driven demand shift toward high-skill goods (accounting for about 5 percent of the increase), capital accumulation interacting with capital–skill complementarity (about 82 percent), and faster productivity growth in skill-intensive industries that lowers their relative prices and further amplifies demand (roughly 10 percent).
-      </div>
+    <div class="abstract">
 
-      <div class="links"> 
-        <a href="files/consumption_upgrading.pdf" target="_blank" class="button-tab">PDF</a>
-        <a href="files/consumption_upgrading_slide.pdf" target="_blank" class="button-tab">Slides</a>
-      </div>
+      Search-and-matching models give the match-specific productivity shock a central role in job creation, job destruction, and worker turnover, but because output is rarely observed at the match level, match quality has been difficult to measure directly. I infer it from worker flows in a matched panel of workers and employers built from LinkedIn profiles (Revelio Labs), 2007 to 2025. A Hidden Markov Model classifies employment spells into seven latent match states based on spell duration, exit outcome, and the worker's employment history. For each spell, I construct a match innovation, the part of the realized outcome that could not have been predicted when the match formed, as an empirical analogue of unexpected match quality, and aggregate these innovations to the firm level. Among Compustat firms, conditional on firm controls, a 10-percentage point shift in match composition from "churning" matches prone to separation toward internal growth tracks predicts 3.9 percentage points higher employment growth, a 1.5 percentage point higher probability of survival, and 4.8 percent higher sales. These effects are comparable to prior estimates for a one standard deviation increase in TFP across U.S. manufacturing establishments, suggesting that match quality is an important source of the firm level shocks that drive growth and survival.
+
     </div>
 
-    <div class="paper">
-      <div class="title">Hiring under Pressure: Financial Constraints and Match Quality</div>
-      <div><em>with Xincheng Qiu, work in progress</em></div>
-      <div class="abstract">
-        This paper examines how financial constraints shape firms’ hiring and job-posting behavior. Leveraging micro firm-level data on vacancy postings and financial ratios, we document that firms with higher debt-to-asset ratios exhibit shorter vacancy durations. We argue that financially constrained firms are less selective in recruitment, resulting in lower match quality. To formalize this mechanism, we develop a search-and-matching model with heterogeneous firms facing financial frictions. In the model, constrained firms adopt lower reservation thresholds for match productivity, leading to higher worker turnover. Using this framework, we study the long-run productivity effects of policies that relax firms’ credit constraints.
-      </div>
+
+
+    <div class="links">
+
+      <a href="files/match_quality_and_firm_dynamics.pdf"
+
+         target="\_blank" class="button-tab">PDF</a>
+
     </div>
-  </main>
+
+  </div>
+
+
+
+
+
+  <!-- Beliefs Paper -->
+
+  <div class="paper">
+
+    <div class="title">
+
+      Inaccurate Beliefs and Cyclical Labor Market Dynamics (Under Review) </span>
+    </div>
+
+
+
+    <div class="presentations">
+
+      SED (Athens); St. Louis Fed; Midwest Macro (Cleveland Fed);
+
+      2025 Econometric Society European Winter Meeting;
+
+      2026 Econometric Society Asian Summer Meeting;
+
+      The Micro and Macro Perspectives of the Labor Market Virtual Workshop
+
+    </div>
+
+
+
+    <div class="abstract">
+
+      This paper examines how systematic biases and heterogeneity in beliefs about the state of the economy shape labor market dynamics. I present evidence that households form dispersed, sluggish expectations, with more optimistic workers demanding higher wages. I develop a search-and-matching model with sticky wages and endogenous separations where workers and firms face information frictions about aggregate productivity. The gap between firm and worker beliefs drives unemployment volatility, while delayed firm learning raises persistence. Heterogeneity in workers' learning rates explains observed differences in employment transitions: workers with more sluggish beliefs are hired at higher wages and face greater separation risk in downturns.
+
+    </div>
+
+
+
+    <div class="links">
+
+      <a href="files/dmp_belief.pdf"
+
+         target="\_blank" class="button-tab">PDF</a>
+
+      <a href="files/dmp_belief_slide.pdf"
+
+         target="\_blank" class="button-tab">Slides</a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Capital-Skill Paper -->
+
+  <div class="paper">
+
+    <div class="title">
+
+      Capital–Skill Complementarity, Consumption Upgrading, and the Rising Skill Premium (Under Review)</span>
+    </div>
+
+
+
+    <div class="presentations">
+
+      Lisbon Macro Workshop (2025);
+
+      Stanford SITE: The Macro and Micro of the Labor Market (2024);
+
+      Federal Reserve Board; LACEA-LAMES (2024)
+
+    </div>
+
+
+
+    <div class="abstract">
+
+      Using household expenditure data and a new occupation-based measure of skill intensity, I document two facts. First, higher-income households allocate a larger share of their spending to skill-intensive goods and services, suggesting that income growth can raise the skill premium through demand. Second, holding real income fixed, consumption has shifted toward these goods and services over time, pointing to additional roles for technological change and relative prices. To quantify the sources of the rise in the U.S. skill premium, I develop a model that combines capital–skill complementarity, final-good-specific production technologies, and nonhomothetic preferences. I provide new estimates of capital–skill complementarity at the final-good level, showing that equipment complements high-skill labor and substitutes for low-skill labor. Equipment accumulation accounts for 83.5% of the predicted rise in the skill premium, and productivity-driven consumption upgrading for 8.4%.
+
+    </div>
+
+
+
+    <div class="links">
+
+      <a href="files/consumption_upgrading.pdf"
+
+         target="\_blank" class="button-tab">PDF</a>
+
+      <a href="files/consumption_upgrading_slide.pdf"
+
+         target="\_blank" class="button-tab">Slides</a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Work in Progress -->
+
+  <div class="paper">
+
+    <div class="title">
+
+      Hiring under Pressure: Financial Constraints and Match Quality
+
+    </div>
+
+
+
+    <div class="coauthors">
+
+      <em>with Xincheng Qiu, work in progress</em>
+
+    </div>
+
+
+
+    <div class="abstract">
+
+      This paper examines how financial constraints shape firms’ hiring and job-posting behavior. Leveraging micro firm-level data on vacancy postings and financial ratios, we document that firms with higher debt-to-asset ratios exhibit shorter vacancy durations. We argue that financially constrained firms are less selective in recruitment, resulting in lower match quality. To formalize this mechanism, we develop a search-and-matching model with heterogeneous firms facing financial frictions. In the model, constrained firms adopt lower reservation thresholds for match productivity, leading to higher worker turnover. Using this framework, we study the long-run productivity effects of policies that relax firms’ credit constraints.
+
+    </div>
+
+  </div>
+
+
+
+</main>
+
+
+
+
+
 </body>
+
 </html>
